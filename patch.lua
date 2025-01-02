@@ -14,7 +14,7 @@ function replace_strings(input)
         ["get_exitcode"] = "get_exit_code",
 
         -- ami
-        ["no-command"] = "namespace",
+        ["no%-command"] = "namespace",
         ["customHelp"] = "custom_help",
         ["includeOptionsInUsage"] = "include_options_in_usage",
         ["shouldReturn"] = "should_return",
