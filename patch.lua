@@ -14,6 +14,7 @@ local function replace_strings(input)
         ["get_exitcode"] = "get_exit_code",
         ["progressFunction"] = "progress_function",
         ["flattenRootDir"] = "flatten_root_dir",
+        ["openFlags"] = "open_flags",
 
         -- ami
         ["no%-command"] = "namespace",
