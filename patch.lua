@@ -1,7 +1,7 @@
 --- Usage:
 ---    eli patch.lua <path to project directory>
 
-function replace_strings(input)
+local function replace_strings(input)
     -- Define the replacement rules
     local replacements = {
         -- eli
@@ -12,6 +12,8 @@ function replace_strings(input)
         ["stderrStream"] = "stderr_stream",
         ["exitcode"] = "exit_code",
         ["get_exitcode"] = "get_exit_code",
+        ["progressFunction"] = "progress_function",
+        ["flattenRootDir"] = "flatten_root_dir",
 
         -- ami
         ["no%-command"] = "namespace",
@@ -58,7 +60,7 @@ function replace_strings(input)
     return result
 end
 
-local args = {...}
+local args = { ... }
 if #args < 1 then
     print("Usage: lua patch.lua <path>")
     os.exit(1)
@@ -79,4 +81,3 @@ for _, candidate in ipairs(candidates) do
         fs.write_file(candidate, new_content)
     end
 end
-
