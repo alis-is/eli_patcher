@@ -12,6 +12,8 @@ local function replace_strings(input)
         ["stderrStream"] = "stderr_stream",
         ["exitcode"] = "exit_code",
         ["get_exitcode"] = "get_exit_code",
+        ["progressFunction"] = "progress_function",
+        ["flattenRootDir"] = "flatten_root_dir",
 
         -- ami
         ["no%-command"] = "namespace",
