@@ -38,7 +38,12 @@ local function replace_strings(input)
         ["stdPassthrough"] = "std_passthrough",
         ["daemonReload"] = "daemon_reload",
         ["disableLogin"] = "disable_login",
-        ["disablePassword"] = "disable_password"
+        ["disablePassword"] = "disable_password",
+
+        -- hjson
+        ["skipkeys"] = "skip_keys",
+        ["sortKeys"] = "sort_keys",
+        ["invalidObjectsAsType"] = "invalid_objects_as_type"
     }
 
     -- Sort the keys by length in descending order
